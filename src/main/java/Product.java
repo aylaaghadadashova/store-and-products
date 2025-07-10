@@ -13,6 +13,6 @@ public class Product {
     }
 
     public String toString() {
-        return ("Product = name:%s\n price%d\n category%s\n stock%d\n");
+        return ("Product = {name: %s\n price:%.2f\n category: %s\n stock: %d\n}").formatted(this.name, this.price, this.category, this.stock);
     }
 }
