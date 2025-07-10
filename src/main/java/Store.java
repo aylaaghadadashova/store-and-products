@@ -29,7 +29,7 @@ public class Store {
     public void applyDiscountToAll(double percent){
         for(int i = 0; i<products.length; i++){
             products[i].price *=(100-percent)/100;
-            System.out.println(products[i].price);
+            System.out.printf("%s: %.2f\n", products[i].name, products[i].price);
         }
     }
 
