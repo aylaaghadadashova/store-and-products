@@ -4,12 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Product product1 = new Product("apple", 0.50, "fruit", 12);
-        Product product2 = new Product("strawberry", 2.5, "fruit", 10);
-        Store store = new Store("Rahat", "Baku", new Product[]{product1, product2});
+        Product product1 = new Product("Apple",  0.80, "Food", 100 );
+        Product product2 = new Product("Bread",  1.20, "Food", 49);
+        Product product3 = new Product("Shampoo", 5.75, "Personal Care", 30);
+        Product product4 = new Product("Toothpaste", 2.50, "Personal Care", 0);
 
-        store.applyDiscountToAll(10);
-        //System.out.println(product1.toString());
+        Product[] products = {product1, product2, product3, product4};
+
+        Store store = new Store("Gozel&Ayla", "Baku", products);
+
+
     }
 
 
