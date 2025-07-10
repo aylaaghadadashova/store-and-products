@@ -12,7 +12,17 @@ public class Product {
         this.stock = stock;
     }
 
+
+    //methods:
+
     public String toString() {
-        return ("Product = {name: %s\n price:%.2f\n category: %s\n stock: %d\n}").formatted(this.name, this.price, this.category, this.stock);
+        return ("Product = {name: %s\n price: %.2f\n category: %s\n stock: %d\n}").formatted(this.name, this.price, this.category, this.stock);
     }
+
+    public double discountPrice(double percent){
+        this.price *= (100-percent)/100;
+        return this.price;
+
+    }
+
 }

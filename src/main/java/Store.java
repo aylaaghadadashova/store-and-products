@@ -6,7 +6,7 @@ public class Store {
     public Product[] products;
 
     //constructors:
-    public Store(){};
+   public Store(){};
     public Store(String name, String address, Product[] products){
         this.name = name;
         this.address = address;
